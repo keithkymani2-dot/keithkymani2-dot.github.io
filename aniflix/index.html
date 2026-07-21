@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniflix - Stream Anime</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- CINEMATIC NETFLIX INTRO SYSTEM -->
+    <div id="netflix-intro">
+        <div class="intro-container">
+            <div class="intro-logo">Aniflix</div>
+        </div>
+    </div>
+
+    <!-- LIQUID GLASS TOP UTILITY BAR -->
+    <navbar class="liquid-glass">
+        <div class="brand">Aniflix</div>
+        <ul class="nav-links">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">Series</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">My List</a></li>
+        </ul>
+    </navbar>
+
+    <!-- CONTENT PORTAL WRAPPER -->
+    <div id="home-page">
+        <!-- AUTOMATED SLIDESHOW LIQUID GLASS BILLBOARD CONTAINER -->
+        <div class="billboard-wrapper">
+            <div class="billboard-bg-layer" id="hero-bg-canvas"></div>
+            
+            <section class="billboard-glass-panel liquid-glass" id="hero-billboard">
+                <div class="billboard-content">
+                    <h1 class="billboard-title" id="hero-title">WHITE SNAKE</h1>
+                    <div class="billboard-meta">
+                        <span class="match">99% Match</span>
+                        <span>2026</span>
+                        <span class="rating">18+</span>
+                        <span id="hero-tags">Action / Sci-Fi</span>
+                    </div>
+                    <p class="billboard-desc" id="hero-desc">Loading ultimate neon warfare matrices...</p>
+                    <div class="btn-stack">
+                        <button class="btn btn-play" id="hero-play-btn">▶ Play</button>
+                        <button class="btn btn-info" id="hero-info-btn">
+                            <span class="inverted-exclamation-circle">¡</span> More Info
+                        </button>
+                        <div class="slideshow-dots" id="carousel-dots"></div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- STREAM CAROUSEL ROWS -->
+        <div class="row-container">
+            <h2 class="row-title">Trending Anime Selections</h2>
+            <div class="card-slider" id="row-trending"></div>
+        </div>
+
+        <div class="row-container">
+            <h2 class="row-title">High Energy Shonen Deals</h2>
+            <div class="card-slider" id="row-shonen"></div>
+        
+
+    </div>
+
+    <!-- GLOSSMORPHIC MODAL HARDWARE PLAYER -->
+    <div id="video-player-overlay">
+        <div class="player-window liquid-glass">
+            <button class="close-player" id="close-player-btn">×</button>
+            <video id="native-video-node" controls autoplay></video>
+        </div>
+    </div>
+
+    <!-- MODAL MORE INFO BOX -->
+    <div id="info-modal-overlay">
+        <div class="info-window liquid-glass">
+            <button class="close-player" id="close-info-btn">×</button>
+            <h2 id="modal-title" style="font-size: 2.5rem; text-transform: uppercase; margin-bottom: 10px;">Title</h2>
+            <p id="modal-tags" style="color: #ff0055; font-weight: bold; margin-bottom: 15px;"></p>
+            <p id="modal-desc" style="font-size: 1.1rem; line-height: 1.6; color: #e5e5e5;"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
